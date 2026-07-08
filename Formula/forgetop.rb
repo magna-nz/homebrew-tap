@@ -1,25 +1,25 @@
 class Forgetop < Formula
-  desc "htop for your software forges — a keyboard-driven terminal UI for pull requests, work items, and CI pipelines across GitHub, Azure DevOps, and Linear"
+  desc "Keyboard-driven terminal UI for PRs, work items, and CI across six forges"
   homepage "https://github.com/magna-nz/forgetop"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.5.0/forgetop-aarch64-apple-darwin.tar.xz"
-      sha256 "b8b2878fe3d3a9a1623256286ed3984ebee773cbb4c7840a59d6b04a015bc8b1"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.6.0/forgetop-aarch64-apple-darwin.tar.xz"
+      sha256 "a5d7485c3f7c534f2f875c63677d4f4dd39964923c9265be4f9c11e1bb13118a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.5.0/forgetop-x86_64-apple-darwin.tar.xz"
-      sha256 "b2a22c9f24cb1ceab623efd2b810376e0936b2afb84a957e7fe31305a9617ca0"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.6.0/forgetop-x86_64-apple-darwin.tar.xz"
+      sha256 "7ce6637ed6fe5864c5c8f3ab5e3ed57e5871bfa465ca4504a311bed23c6ceb76"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.5.0/forgetop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a73aa90517aca5cd94641e5f6b255b3006376fdbc86549e40ca3d3db5f839c39"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.6.0/forgetop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3cc318780aca6a78e1209eb97c5c4fd32e9d6ee9bce46f1b31a1499d340c36c6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.5.0/forgetop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "35a087e991f621469d7ad81bf2ce677b7b9dc4055958df23802b5c08988c3a5e"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.6.0/forgetop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3eee24030da6ec5ef3f2fdb27ba6ed04413b2a3aa371c8752ac28aaa42cc243e"
     end
   end
   license "MIT"
