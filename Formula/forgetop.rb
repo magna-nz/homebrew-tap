@@ -1,25 +1,25 @@
 class Forgetop < Formula
   desc "Keyboard-driven terminal UI for PRs, work items, and CI across six forges"
   homepage "https://github.com/magna-nz/forgetop"
-  version "0.10.1"
+  version "0.11.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.10.1/forgetop-aarch64-apple-darwin.tar.xz"
-      sha256 "fdb93141cfdd471fe136c1de7e21495a872cae0816d37d430b9118b693479ab1"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.11.0/forgetop-aarch64-apple-darwin.tar.xz"
+      sha256 "a8c7bfc80a81bbc90b399d78c2cd86416efd34fb3e45ff4067f12d32d78cb510"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.10.1/forgetop-x86_64-apple-darwin.tar.xz"
-      sha256 "4861d264b2b2176c9c049a399974b9c9484b7b0f988ea4d90dcb0e880195e000"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.11.0/forgetop-x86_64-apple-darwin.tar.xz"
+      sha256 "7e84b0bbb96bd360c4d6f6183e3946f35fd5eeb59e4c605f271db3e3649750b3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.10.1/forgetop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ad6331d7bac50dbe77ef21af823d8267af7d2fd761b43fbf7d90bce14f9da86c"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.11.0/forgetop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "272928a17bfd6c11ce3a7ba90ad3c49019f49f885bdc0c48fbb21feecc626cac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v0.10.1/forgetop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "49b9fade33ee659d851e470c6668eadd63c7d6808c75d09908f4527173bf3239"
+      url "https://github.com/magna-nz/forgetop/releases/download/v0.11.0/forgetop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0c3ab9ea8c3c06626ab595d062c39b96f8a5a62ed3cb237ac259bd9bbf8d09bb"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Forgetop < Formula
   end
 
   def install
-    bin.install "forgetop" if OS.mac? && Hardware::CPU.arm?
-    bin.install "forgetop" if OS.mac? && Hardware::CPU.intel?
-    bin.install "forgetop" if OS.linux? && Hardware::CPU.arm?
-    bin.install "forgetop" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "forgetop"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "forgetop"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "forgetop"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "forgetop"
+    end
 
     install_binary_aliases!
 
