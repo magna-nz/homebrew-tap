@@ -1,6 +1,6 @@
 cask "remuda" do
-  version "0.3.0"
-  sha256 "1998beda26e3b9c7863582a388ac76c1db973cc3810ca3cd5deea8a074d09cf3"
+  version "1.0.0"
+  sha256 "0f6701ab22ebc7d32779843224ce359108f1f2c4b3a8270573afb201a6a91720"
 
   url "https://github.com/magna-nz/remuda/releases/download/v#{version}/Remuda-#{version}-aarch64.tar.gz"
   name "Remuda"
