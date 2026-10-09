@@ -1,25 +1,25 @@
 class Forgetop < Formula
   desc "Keyboard-driven terminal UI for PRs, work items, and CI across six forges"
   homepage "https://github.com/magna-nz/forgetop"
-  version "1.6.4"
+  version "1.6.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.4/forgetop-aarch64-apple-darwin.tar.xz"
-      sha256 "389d5ca0d0ad761aa778161f641ad7f744846a0d1b69eea7b374c5a345fef3f0"
+      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.5/forgetop-aarch64-apple-darwin.tar.xz"
+      sha256 "08c52ba749bfd1040617b980d9368c80424c5588f78903f45ea81ab8fc37392b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.4/forgetop-x86_64-apple-darwin.tar.xz"
-      sha256 "2b44908e5be6a7c1ab6143d4a32fb7bceab7ddfe34075fc6b95e78d306bd47aa"
+      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.5/forgetop-x86_64-apple-darwin.tar.xz"
+      sha256 "095e66d584594176e556389a2b0b6e811f46166994bc728c4f9069afd26e417e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.4/forgetop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8bf8d0f702c552bb3c8ebd0b7f7c3fff5c3906fa30b3a5bab2d85644f0e6aff2"
+      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.5/forgetop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "08d388d98aeb8d870bf3c315a50cb2f21f96e7537a74b8157c2b03fc3aec42c8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.4/forgetop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ac1e5665423fb85d7b3f8367ab5aaf8b7547888ec522ddda2d6e55a2d02bc49f"
+      url "https://github.com/magna-nz/forgetop/releases/download/v1.6.5/forgetop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "408a0609cc448282c43524f409dd74de7a87f7ed6e3d2769278472be59b2a3b7"
     end
   end
   license "MIT"
