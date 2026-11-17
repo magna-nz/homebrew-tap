@@ -1,25 +1,25 @@
 class RedisLens < Formula
   desc "A terminal UI for Redis and Valkey: browse keys and values, find what uses the memory, watch the server and run commands."
   homepage "https://magna-nz.github.io/redis-lens/"
-  version "0.1.0"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/redis-lens/releases/download/v0.1.0/redis-lens-aarch64-apple-darwin.tar.xz"
-      sha256 "70e7d215534107cde746b052b59b90c81f0aa946ecf3bc04c264bdb36e804e5c"
+      url "https://github.com/magna-nz/redis-lens/releases/download/v1.0.0/redis-lens-aarch64-apple-darwin.tar.xz"
+      sha256 "c21d952cdfbffa698d5a7896b11889593cf5702056775b1221ce239541cf7b30"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/redis-lens/releases/download/v0.1.0/redis-lens-x86_64-apple-darwin.tar.xz"
-      sha256 "d48fa2e19cd8a82360f262053c7eac4ccdbc6044213478b0d8d2377f7c55e967"
+      url "https://github.com/magna-nz/redis-lens/releases/download/v1.0.0/redis-lens-x86_64-apple-darwin.tar.xz"
+      sha256 "ba089800f227c76ea4f549293adc73e893a8df3c813eca514039620dec9d8f98"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/magna-nz/redis-lens/releases/download/v0.1.0/redis-lens-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "55cc7f7ad1a50ec15fdef158ec00c311fd1fa6c0d5002391354384759a8666ab"
+      url "https://github.com/magna-nz/redis-lens/releases/download/v1.0.0/redis-lens-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "78ee66519856d0048a1d585626ab2368e0861aa6a49a4077beecc01174d726e4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magna-nz/redis-lens/releases/download/v0.1.0/redis-lens-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "de505d9c53999ac43975cef8646187e5d31042c9d6d07f06f2f82d1eb29ba094"
+      url "https://github.com/magna-nz/redis-lens/releases/download/v1.0.0/redis-lens-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "25dbd833a89c7b66865b481367c01c4a4cdea61c92ad1867794fca71855da874"
     end
   end
   license "MIT"
